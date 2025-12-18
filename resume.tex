@@ -1,0 +1,159 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+% ---------- PAGE SETUP ----------
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+% slightly widen right margin to avoid any overflow
+\usepackage[top=0.28in, bottom=0.32in, left=0.28in, right=0.35in]{geometry}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% ---------- SECTION FORMATTING ----------
+\titleformat{\section}{
+  \scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-2pt}]
+\titlespacing*{\section}{0pt}{6pt plus 1pt minus 1pt}{3pt plus 1pt minus 1pt}
+
+\pdfgentounicode=1
+\setlength{\parindent}{0pt}
+\renewcommand{\baselinestretch}{0.93}
+
+% ---------- CUSTOM COMMANDS (updated to use wrap-capable columns) ----------
+% resumeSubheading: left column is p{0.65\textwidth} so long institution or role text wraps
+\newcommand{\resumeItem}[1]{\item\small{{#1 \vspace{-2pt}}}}
+
+\newcommand{\resumeSubheading}[4]{\vspace{0pt}\item
+  \begin{tabular*}{0.965\textwidth}[t]{p{0.65\textwidth}@{\extracolsep{\fill}}r}
+    \textbf{#1} & \textit{\small #2} \\
+    \textit{\small #3} & \textit{\small #4} \\
+  \end{tabular*}\vspace{3pt}}  % slightly increased vspace to aid readability
+
+% resumeEduheading similarly wraps
+\newcommand{\resumeEduheading}[4]{\vspace{0pt}\item
+  \begin{tabular*}{0.93\textwidth}[t]{p{0.8\textwidth}@{\extracolsep{\fill}}r}
+    \textbf{#1} & \textit{\small #2} \\
+    \textit{\small #3} & \textit{\small #4} \\
+  \end{tabular*}\vspace{3pt}}
+
+\newcommand{\resumeProjectHeading}[2]{\item
+  \begin{tabular*}{0.965\textwidth}{p{0.78\textwidth}@{\extracolsep{\fill}}r}
+    \small#1 & #2 \\
+  \end{tabular*}\vspace{-4pt}}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-3pt}}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.14in, label={}, itemsep=1pt]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.14in, itemsep=1pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-3pt}}
+
+% ---------- DOCUMENT ----------
+\begin{document}
+
+\begin{center}
+  \textbf{\Huge \scshape Soorej Santhoshkumar Nair} \\ \vspace{1pt}
+  \small +1(303)-243-2932 $|$ soorej.s.nair@gmail.com $|$ linkedin.com/in/soorej-s-nair-73559470 $|$ github.com/Soorej30
+\end{center}
+\vspace{-12pt}
+
+\section{Summary}
+\small{
+  Data Scientist with 4+ years of experience developing \textbf{deep learning and computer vision models} for real-world applications. Skilled in \textbf{Python, C++, and PyTorch} with strong expertise in \textbf{image enhancement, restoration, and generative modeling}. Experienced in building \textbf{diffusion-based and transformer architectures} for vision-language tasks, and deploying them at scale using \textbf{AWS, GCP, and Docker}. Passionate about advancing \textbf{AI-driven imaging systems} and applying generative AI to improve camera performance and user experience.
+}
+
+\section{Experience}
+\resumeSubHeadingListStart
+
+  \resumeSubheading
+    {Senior Data Scientist}{Sep 2024 -- Jul 2025}
+    {XPO Logistics}{Pune, India}
+    \resumeItemListStart
+      \resumeItem{Led the design and deployment of \textbf{deep learning pipelines} for image and document quality enhancement using \textbf{CNNs and autoencoders}.}
+      \resumeItem{Developed and optimized \textbf{diffusion-inspired generative models} to improve visual clarity and reduce noise in OCR pipelines.}
+      \resumeItem{Built \textbf{Transformer-based NLP-vision modules} using \textbf{PyTorch, TensorFlow, and AWS Lambda}, improving text-image alignment and content reconstruction accuracy.}
+      \resumeItem{Collaborated with \textbf{cross-functional research and engineering teams} to scale real-time inference models for edge and cloud systems.}
+    \resumeItemListEnd
+
+  \resumeSubheading
+    {Data Scientist}{Jul 2022 -- Aug 2024}
+    {XPO Logistics}{Pune, India}
+    \resumeItemListStart
+      \resumeItem{Developed \textbf{image recognition and enhancement systems} using \textbf{CNNs and GANs}, enabling robust document restoration and classification.}
+      \resumeItem{Implemented \textbf{vision-language data pipelines} combining OCR, embeddings, and multimodal learning for improved accuracy in labeling and retrieval.}
+      \resumeItem{Applied \textbf{model quantization and pruning techniques} to accelerate inference speed without compromising performance.}
+    \resumeItemListEnd
+
+  \resumeSubheading
+    {Associate Data Scientist}{Jul 2021 -- Jun 2022}
+    {XPO Logistics}{Hyderabad, India}
+    \resumeItemListStart
+      \resumeItem{Developed \textbf{CNN-based visual classifiers} for quality inspection tasks, reducing manual review time by 70\%.}
+      \resumeItem{Built and deployed \textbf{RNN-based forecasting models} for predictive data streams, integrating image and time-series insights.}
+    \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+\section{Projects}
+\resumeSubHeadingListStart
+
+  \resumeProjectHeading
+    {\textbf{Diffusion-based Image Restoration System} $|$ \emph{Python, PyTorch, Hugging Face, OpenCV, AWS}}{}
+    \resumeItemListStart
+      \resumeItem{Built a \textbf{denoising diffusion probabilistic model (DDPM)} for real-world image enhancement and color correction.}
+      \resumeItem{Integrated \textbf{vision-language embeddings (CLIP)} to guide image restoration tasks and improve semantic consistency.}
+    \resumeItemListEnd
+
+  \resumeProjectHeading
+    {\textbf{Vision-Language Generative Pipeline for Artistic Image Captioning} $|$ \emph{Python, PyTorch, Transformers, Stable Diffusion}}{}
+    \resumeItemListStart
+      \resumeItem{Created an end-to-end \textbf{multimodal generative model} combining \textbf{Transformers and diffusion models} for image captioning and creative synthesis.}
+      \resumeItem{Trained using \textbf{pretrained CLIP and Stable Diffusion} architectures with fine-tuning on custom image-text datasets.}
+    \resumeItemListEnd
+
+  \resumeProjectHeading
+    {\textbf{Transformer-based Hindi Poetry Generator} $|$ \emph{Python, PyTorch, TensorFlow}}{}
+    \resumeItemListStart
+      \resumeItem{Developed a generative text model using \textbf{Transformers and LSTMs} to mimic poetic styles and structure.}
+    \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+\section{Education}
+\resumeSubHeadingListStart
+  \resumeEduheading
+    {University of Colorado, Boulder}{Aug 2025 -- May 2027}
+    {Master of Science in Data Science | GPA: 4.00 | Focus: Machine Learning, Computer Vision, Generative AI}{}
+  \resumeEduheading
+    {Birla Institute of Technology and Science, Pilani}{Aug 2017 -- May 2021}
+    {Bachelor of Engineering in Computer Science| GPA: 3.10| Relevant Coursework: Machine Learning, Deep Learning, Computer Vision, Neural Networks, Cryptography}{}
+\resumeSubHeadingListEnd
+
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+  \small{\item{
+    \textbf{Languages}{: Python, C++, C, Rust, Java, SQL, MATLAB} \\
+    \textbf{Frameworks}{: PyTorch, TensorFlow, Keras, Hugging Face, Diffusers, OpenCV, Scikit-learn} \\
+    \textbf{Generative AI}{: Diffusion Models, Vision-Language Models (CLIP, BLIP, Stable Diffusion), GANs, Autoencoders} \\
+    \textbf{Cloud \& Tools}{: AWS, GCP, Docker, Kubernetes, Git, MLflow, Airflow} \\
+    \textbf{Core Competencies}{: Image Enhancement, Image Restoration, Generative Modeling, Multimodal Learning, Computer Vision, Deep Learning, Model Optimization}
+  }}
+\end{itemize}
+
+\end{document} 

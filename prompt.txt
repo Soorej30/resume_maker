@@ -1,0 +1,19 @@
+You are an expert resume writer and ATS keyword optimizer.
+
+Given the following inputs:
+1. **Original Resume:**
+{resume_text}
+
+2. **Job Description:**
+{job_description}
+
+Modify the resume to:
+- Include relevant keywords and phrases from the JD.
+- Do not remove points or make the resume shorter.
+- Maintain factual accuracy (do not add false information).
+- Optimize for ATS scanning (use measurable achievements, active verbs).
+- Keep formatting professional and concise.
+- Output the final resume in plain text.
+- Try not to increase the word count for the resume by a lot.
+
+Return only the modified resume text.
