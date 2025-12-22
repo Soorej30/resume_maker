@@ -1,54 +1,83 @@
 import requests
-from openai import OpenAI
-from PyPDF2 import PdfReader
-from reportlab.platypus import SimpleDocTemplate, Paragraph
-from reportlab.lib.styles import getSampleStyleSheet
+import re
+import json
+import subprocess
+from pdflatex import PDFLaTeX
 
-with open("prompt.txt", "r") as file1:
-    prompt = file1.read()
+def latex_escape(text):
+    replacements = {
+        "\\": r"\textbackslash{}",
+        "&": r"\&",
+        "%": r"\%",
+        "$": r"\$",
+        "#": r"\#",
+        "_": r"\_",
+        "{": r"\{",
+        "}": r"\}",
+        "~": r"\textasciitilde{}",
+        "^": r"\textasciicircum{}",
+    }
 
-# with open("api_key_2.txt", "r") as file2:
-#     api_key = file2.read()
+    for char, replacement in replacements.items():
+        text = text.replace(char, replacement)
 
-resume_text = ""
-for page in PdfReader("Soorej resume 2025-10-21.pdf").pages:
-    resume_text += page.extract_text()
-
-with open("job_description.txt", "r") as file3:
-    job_description = file3.read()
-
-prompt = prompt.format(resume_text = resume_text, job_description = job_description)
-print(prompt)
+    return text
 
 def ollama_chat(prompt):
+    schema = {
+    "type": "object",
+    "properties": {
+        "bullets": {
+            "type": "array",
+            "items": {
+                "type": "string",
+                "description": "A single rewritten resume bullet point"
+            }
+        }
+    },
+    "required": ["bullets"]
+}
     r = requests.post(
         "http://localhost:11434/api/generate",
         json={
             "model": "llama3.1:8b",
             "prompt": prompt,
-            "stream": False
+            "stream": False,
+            "format": schema
         }
     )
     return r.json()["response"]
 
+
+with open("prompt.txt", "r") as file1:
+    prompt = file1.read()
+
+RESUME_TEX_PATH = "resume.tex"
+with open(RESUME_TEX_PATH, "r") as f:
+    latex_resume = f.read()
+
+with open("job_description.txt", "r") as file3:
+    job_description = file3.read()
+
+items = re.findall(r'\\resumeItem\{(.*?)\}', latex_resume, re.DOTALL)
+items = [item for item in items if len(item) > 10]
+
+print(f"Found {len(items)} bullet points to optimize...")
+
+prompt = prompt.format(resume_items = chr(10).join(items), job_description = job_description)
+
 optimized_resume_text = ollama_chat(prompt)
 
-# client = OpenAI(api_key = api_key)
-# response = client.chat.completions.create(
-#     model="gpt-4o",
-#     messages=[{"role": "user", "content": prompt}]
-# )
+new_points = json.loads(optimized_resume_text)
 
-# optimized_resume_text = response.choices[0].message.content
+new_resume = latex_resume
+new_points["bullets"] = [latex_escape(t) for t in new_points["bullets"]]
 
-print("*******************___________________***********************")
-print(optimized_resume_text)
-print("*******************___________________***********************")
+for old, new in zip(items, new_points["bullets"]):
+    new_resume = new_resume.replace(old, new)
 
-def text_to_pdf(text, filename="new_resume.pdf"):
-    doc = SimpleDocTemplate(filename)
-    styles = getSampleStyleSheet()
-    story = [Paragraph(line, styles["Normal"]) for line in text.split("\n") if line.strip()]
-    doc.build(story)
+new_resume_tex = 'tailored_resume.tex'
+new_resume_pdf = 'tailored_resume.pdf'
 
-text_to_pdf(optimized_resume_text)
+with open(new_resume_tex, "w") as f:
+    f.write(new_resume)
