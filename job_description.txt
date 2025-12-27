@@ -1,21 +1,42 @@
-Within Apple’s Artificial Intelligence and Machine Learning organization (AIML), you can take part in the ongoing revolution that machine learning plays in daily life. Apple’s fully-integrated hardware and software provide unique opportunities to deliver amazing experiences, all while prioritizing user privacy. We do work in all fields of Machine Learning, including, but not limited to, large language models, diffusion models and reinforcement learning, as well as other related areas such as accessibility, privacy, and fairness. 
-As an AIML intern, you will get to explore new methods, apply machine learning to solve ambitious problems, advance state-of-the art technology through research and publications, challenge existing metrics or protocols, and develop new theories that will impact the way we understand machine learning and the experiences it can enable. Come collaborate with some of the best in the business and help build the world's most innovative products and experiences.
-Description
-In an AIML internship, you will collaborate with researchers, engineers, and program/project managers to tackle innovative challenges. You will also receive technical mentorship and guidance that allows you to learn new things every day, gain practical skills, build real world experience, develop a greater understanding of our industry, and form valuable connections. 
-Together, you and your team will partner to design and implement an innovative solution for a Machine Learning problem that is meaningful. At the end of your internship, you will have the opportunity to meet and present your work to AIML leadership. Where appropriate, you will have the opportunity to submit your work for publication at a suitable conference.
-Minimum Qualifications
-Working toward an undergraduate, graduate or doctoral degree in computer science, engineering, data science, applied mathematics, or equivalent. Doctoral degree paths are preferred for research focused internships.
-At the end of the internship, you must return to school to continue your education or the internship must be the last requirement for you to graduate.
-Preferred Qualifications
-It’s helpful if you meet one or more of the following qualifications, but it isn’t a requirement
-Proficiency with an object-oriented programming language, such as Python, Swift, Objective C or Java
-Experience with ML libraries, such as TensorFlow, PyTorch, CoreFlow, and Sklearn
-Practical knowledge related to building and adapting algorithms for machine learning, speech, multimodal sensing, and related areas
-Familiarity with crafting, prototyping, and evaluating interactive systems
-Excellent mathematical skills in linear algebra and statistics
-Ability to collaborate with others
-Problem solving skills
-Applied ML Engineering internships: Experience with integrating research prototypes into production applications. Proficiency conducting ethnographic or other situated studies of human interaction with or through interactive technologies. Experience crafting, conducting, analyzing, and interpreting experiments and investigations
-Demonstrated expertise with proven publication or track record in at least one of the areas: statistics, econometrics, operations research, quantitative marketing, causal inference, time series analysis, stochastic modeling, optimization and decision making theory
-Research-Focused internships: Currently pursuing a doctoral degree. Research experience in Machine Learning and a demonstrable record of publishing academic research in peer-reviewed venues
-This posting is not for a specific job opening and by submitting your resume you are expressing interest in being contacted about this type of role at Apple in the future.
+About the job
+Company Description
+
+Hadron Energy specializes in Micro Modular Reactor (MMR) development, design, and research based in the San Francisco Bay Area. As the leading MMR developer, Hadron Energy is building factory-produced, transportable microreactors that provide 24/7 carbon-free power for data centers, government facilities, industrial sites, and remote communities. Our mission is to create a brighter, healthier, and more equitable energy future.
+
+
+Artificial Intelligence Intern – Role Description
+
+This is a full-time on-site or hybrid role for an Artificial Intelligence Intern, based in the San Francisco Bay Area. The position is ideal for students or recent graduates passionate about using artificial intelligence to drive innovation, automation, and productivity within a rapidly growing clean energy company.
+
+
+The Artificial Intelligence Intern will assist in developing, testing, and deploying AI-driven tools, agents, and automation systems that streamline workflows, enhance engineering efficiency, and support corporate operations. You will work closely with Hadron’s AI Engineer, software development, and engineering teams to prototype internal AI solutions, integrate APIs, and explore the use of large language models (LLMs) and automation frameworks to accelerate innovation across the organization.
+
+
+This role offers an opportunity to gain hands-on experience applying AI and automation to real-world engineering and business challenges in one of the most advanced technology sectors—nuclear energy.
+
+
+Responsibilities
+
+Support the development and testing of AI tools, scripts, and automations that enhance productivity and collaboration
+Assist in building and maintaining AI agents to optimize workflows across engineering, project management, and operations
+Prototype and deploy machine learning or natural language processing (NLP) models for internal use cases
+Research and evaluate new AI frameworks, APIs, and technologies (e.g., OpenAI, LangChain, Anthropic, Hugging Face) for potential adoption
+Collaborate with the software and systems engineering teams to integrate AI features into existing tools and data systems
+Support documentation, version control, and deployment of AI-driven applications
+Analyze user feedback to improve AI model performance and tool usability
+Participate in brainstorming and ideation sessions to identify high-impact automation opportunities
+Present findings and progress in weekly project meetings
+
+
+Qualifications & Skillsets
+
+Currently pursuing or recently completed a Bachelor’s or Master’s degree in Computer Science, Artificial Intelligence, Data Science, or a related field
+Foundational understanding of machine learning, NLP, and generative AI concepts
+Proficiency in Python, with familiarity using frameworks such as TensorFlow, PyTorch, scikit-learn, or LangChain
+Experience working with APIs, automation tools, and AI SDKs (e.g., OpenAI API, Hugging Face, Anthropic, Zapier, Make)
+Strong problem-solving skills and an experimental, iterative approach to development
+Excellent written and verbal communication skills, with the ability to summarize technical work for non-technical audiences
+Interest in automation, productivity tooling, and the application of AI to industrial or energy systems
+Curiosity, creativity, and a self-starter mindset suited to a fast-paced, innovative environment
+Passion for clean energy and the intersection of artificial intelligence with sustainable technology
+
