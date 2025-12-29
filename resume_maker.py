@@ -154,5 +154,5 @@ def create_cover_letter():
     print("Cover letter optimized.")
 
 
-# create_resume()
+create_resume()
 create_cover_letter()
