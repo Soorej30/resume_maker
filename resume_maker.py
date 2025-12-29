@@ -36,6 +36,7 @@ def ollama_chat(prompt, schema):
     return r.json()["response"]
 
 def create_resume():
+    print("Beginning resume optimization.")
     with open("prompts/resume_prompt.txt", "r") as file1:
         prompt = file1.read()
 
@@ -83,7 +84,10 @@ def create_resume():
     with open(new_resume_tex, "w") as f:
         f.write(new_resume)
 
+    print("Resume completed.")
+
 def create_cover_letter():
+    print("Beginning cover letter optimization.")
     with open("prompts/cover_letter_prompt.txt", "r") as file1:
         prompt = file1.read()
 
@@ -101,20 +105,25 @@ def create_cover_letter():
     schema = {
         "type": "object",
         "properties": {
+            "company_name": {
+                "type": "string",
+                "description": "The company name for which the application is for."
+            },
             "opening_paragraph": {
                 "type": "string",
-                "description": "Opening paragraph introducing the candidate and role. In pure text format."
+                "description": "Opening paragraph introducing the candidate and role. In pure text string format. No special characters."
             },
             "body_paragraph": {
                 "type": "string",
-                "description": "A body paragraph highlighting relevant experience and skills. In pure text format."
+                "description": "A body paragraph highlighting relevant experience and skills. In pure text string format. No special characters."
             },
             "closing_paragraph": {
                 "type": "string",
-                "description": "Closing paragraph expressing interest and next steps. In pure text format."
+                "description": "Closing paragraph expressing interest and next steps. In pure text string format. No special characters."
             }
         },
         "required": [
+            "company_name",
             "opening_paragraph",
             "body_paragraph",
             "closing_paragraph"
@@ -125,19 +134,25 @@ def create_cover_letter():
 
     new_cover_letter = json.loads(optimized_cover_letter)
 
-    # print(new_cover_letter['opening_paragraph'])
-    # print(new_cover_letter['body_paragraph'])
-    # print(new_cover_letter['closing_paragraph'])
-    latex_cover_letter = latex_cover_letter.replace('opening_paragraph', latex_escape(new_cover_letter['opening_paragraph']))
-    latex_cover_letter = latex_cover_letter.replace('body_paragraph', latex_escape(new_cover_letter['body_paragraph']))
-    latex_cover_letter = latex_cover_letter.replace('closing_paragraph', latex_escape(new_cover_letter['closing_paragraph']))
+    try:
+        latex_cover_letter = latex_cover_letter.replace('company_name', latex_escape(new_cover_letter['company_name']['text']))
+        latex_cover_letter = latex_cover_letter.replace('opening_paragraph', latex_escape(new_cover_letter['opening_paragraph']['text']))
+        latex_cover_letter = latex_cover_letter.replace('body_paragraph', latex_escape(new_cover_letter['body_paragraph']['text']))
+        latex_cover_letter = latex_cover_letter.replace('closing_paragraph', latex_escape(new_cover_letter['closing_paragraph']['text']))
+    
+    except:
+        latex_cover_letter = latex_cover_letter.replace('company_name', latex_escape(new_cover_letter['company_name']))
+        latex_cover_letter = latex_cover_letter.replace('opening_paragraph', latex_escape(new_cover_letter['opening_paragraph']))
+        latex_cover_letter = latex_cover_letter.replace('body_paragraph', latex_escape(new_cover_letter['body_paragraph']))
+        latex_cover_letter = latex_cover_letter.replace('closing_paragraph', latex_escape(new_cover_letter['closing_paragraph']))
 
     new_cover_letter_tex = 'latex_files/tailored_cover_letter.tex'
 
-    # print(latex_cover_letter)
     with open(new_cover_letter_tex, "w") as f:
         f.write(latex_cover_letter)
 
+    print("Cover letter optimized.")
 
-create_resume()
+
+# create_resume()
 create_cover_letter()

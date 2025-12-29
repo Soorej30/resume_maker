@@ -1,42 +1,56 @@
 About the job
-Company Description
+Summer Internship in Digital Signal Processing and Machine Learning
 
-Hadron Energy specializes in Micro Modular Reactor (MMR) development, design, and research based in the San Francisco Bay Area. As the leading MMR developer, Hadron Energy is building factory-produced, transportable microreactors that provide 24/7 carbon-free power for data centers, government facilities, industrial sites, and remote communities. Our mission is to create a brighter, healthier, and more equitable energy future.
+ Expedition Technology (EXP) leads the way in combining machine learning with digital signal processing. Spend your summer immersing yourself in the fascinating world of digital signal deep learning alongside top-tier engineers. Join our mission to tackle the unsolved challenges in the thrilling new field of Radio Frequency Machine Learning.
+What will you do as a Signal Processing and Machine Learning Intern? 
 
+Learn & Develop: Delve into real-time machine learning systems operating on streaming, real-world RF data. Craft novel algorithms for GPU-accelerated digital signal analysis across diverse RF domains like communications and radar. 
+Implement: Leverage Python to execute core digital signal processing tasks – from filtering and spectral analysis to waveform generation. Work with the team to integrate your solutions to run in real systems to demonstrate their effectiveness. Utilize and deploy modern DevOps and MLOps tools. 
+Collaborate: Engage in data processing pipelines, training ML systems, analyzing outcomes, working alongside a team of developers, and tackling real-world issues alongside our esteemed teams. 
+Key Details:
 
-Artificial Intelligence Intern – Role Description
+Location: Onsite at Expedition Technology HQ, Herndon, VA. 
+Compensation: $33.50/hr. 
+Duration: Full-time (40 hours/week) Summer 2026
+Is an EXP summer internship right for you? 
 
-This is a full-time on-site or hybrid role for an Artificial Intelligence Intern, based in the San Francisco Bay Area. The position is ideal for students or recent graduates passionate about using artificial intelligence to drive innovation, automation, and productivity within a rapidly growing clean energy company.
+Eligible candidates should meet the following criteria:
+United States citizenship is required for security clearance purposes
+Currently enrolled student pursuing a college degree in computer science, electrical engineering, math, physics, or other STEM-related field
+Entering final year of an undergraduate or graduate program with an anticipated graduation date of December 2026 or May 2027 
+Proficiency in modern programming languages (Python preferred)
+Familiarity with command line and version control (Git) experience
+Interest in signal processing (courses, clubs, projects, etc.)
+Interest in machine learning (RF, audio, computer-vision, LLMs)
+Interest in working in defense and intelligence post-graduation
+Must be willing to undergo background investigation for a US-government issued security clearance
+What’s it like being a summer intern at Expedition Technology? 
 
+Get a first-hand perspective from our interns themselves by reading this blog post written by our summer 2025 intern team!
+Still hungry for more information? Read about our work, our culture and our accolades on our website and LinkedIn.
+About Expedition Technology (EXP)
 
-The Artificial Intelligence Intern will assist in developing, testing, and deploying AI-driven tools, agents, and automation systems that streamline workflows, enhance engineering efficiency, and support corporate operations. You will work closely with Hadron’s AI Engineer, software development, and engineering teams to prototype internal AI solutions, integrate APIs, and explore the use of large language models (LLMs) and automation frameworks to accelerate innovation across the organization.
+Positioned in Northern Virginia’s tech hub, EXP is a booming, employee-owned entity that crafts advanced solutions for the defense and intelligence sectors. We champion innovation, promote individual growth, and thrive on collaboration.
+We’re committed to embracing diversity:
 
+At EXP, we believe in the power of diverse minds. All applicants will be considered without bias. We're an Equal Opportunity Employer that cherishes creativity sparked by varied backgrounds. 
+Who is Expedition Technology?
 
-This role offers an opportunity to gain hands-on experience applying AI and automation to real-world engineering and business challenges in one of the most advanced technology sectors—nuclear energy.
+Expedition Technology (EXP) designs, develops, and delivers innovative, advanced signal, image, and multi-INT solutions for the defense and intelligence communities. We leverage advanced algorithms, platforms, and technologies to solve our customers’ most complex, demanding, and urgent C4ISR challenges. Our culture promotes individual growth and opportunity, prioritizes a collaborative team spirit, and invites the intellectually curious to creatively solve challenging problems. Headquartered in Northern Virginia’s high-tech corridor, EXP is a rapidly growing, privately held, employee-owned company that pushes the boundaries of what is possible every day.
+Interested in joining our team? Let’s explore together.
+To learn more about EXP and discover why we are an award-winning workplace, visit our web site and follow us on LinkedIn.
+Join Our Team and Enjoy Exceptional Benefits!
 
-
-Responsibilities
-
-Support the development and testing of AI tools, scripts, and automations that enhance productivity and collaboration
-Assist in building and maintaining AI agents to optimize workflows across engineering, project management, and operations
-Prototype and deploy machine learning or natural language processing (NLP) models for internal use cases
-Research and evaluate new AI frameworks, APIs, and technologies (e.g., OpenAI, LangChain, Anthropic, Hugging Face) for potential adoption
-Collaborate with the software and systems engineering teams to integrate AI features into existing tools and data systems
-Support documentation, version control, and deployment of AI-driven applications
-Analyze user feedback to improve AI model performance and tool usability
-Participate in brainstorming and ideation sessions to identify high-impact automation opportunities
-Present findings and progress in weekly project meetings
-
-
-Qualifications & Skillsets
-
-Currently pursuing or recently completed a Bachelor’s or Master’s degree in Computer Science, Artificial Intelligence, Data Science, or a related field
-Foundational understanding of machine learning, NLP, and generative AI concepts
-Proficiency in Python, with familiarity using frameworks such as TensorFlow, PyTorch, scikit-learn, or LangChain
-Experience working with APIs, automation tools, and AI SDKs (e.g., OpenAI API, Hugging Face, Anthropic, Zapier, Make)
-Strong problem-solving skills and an experimental, iterative approach to development
-Excellent written and verbal communication skills, with the ability to summarize technical work for non-technical audiences
-Interest in automation, productivity tooling, and the application of AI to industrial or energy systems
-Curiosity, creativity, and a self-starter mindset suited to a fast-paced, innovative environment
-Passion for clean energy and the intersection of artificial intelligence with sustainable technology
-
+Expedition Technology (EXP) offers a flexible, self-directed benefits package that is designed to fit your individual needs. Here’s a glimpse of the outstanding benefits you can enjoy when you join our team:
+Company-paid medical, dental, and vision insurance
+Generous Time Off: Enjoy 12 paid holidays, up to 33 days of PTO, and generous sick leave
+Robust 401(k) Plan: Benefit from up to a 12% company contribution, including a 3% safe harbor, 6% match, and up to 3% additional as a form of profit sharing. 
+Student Loan Repayment: Take advantage of our unique option to reallocate a portion of your 401(k) match funds to repay student loans, helping you achieve financial freedom faster. 
+Paid Parental Leave: Six weeks of paid leave for the primary caregiver and 2 weeks of paid leave for the secondary caregiver for you to bond with your new family member. 
+Tuition Reimbursement: Pursue further education with up to $5,250/year available to support your continuous learning and growth. 
+Referral Bonus Program: Earn rewards for bringing talented individuals into our team. 
+Exclusive Entertainment Perks: Enjoy free tickets to sporting events, theater, concerts, and more, adding fun and excitement to your life. 
+Onsite Amenities: Stay fit and healthy with our free, onsite fitness center, active workstations featuring treadmill and bike desks, and enjoy our onsite cafeteria with reduced-cost options. 
+Inspiring Work Culture: Thrive in a collaborative, creative, and supportive culture where you are encouraged to push boundaries, take risks, and enjoy the rewards. 
+Join us and be part of a team that values your well-being and professional growth. Apply today and take the first step towards a fulfilling career with us!
+EXP is proud to be an Equal Opportunity Employer that believes a diverse range of talent creates an environment that fosters creativity and innovation. All qualified applicants will receive consideration for employment without regard to race, color, religion, sex, sexual orientation, gender identity, age, disability, national origin, genetic information, or protected veteran status. 

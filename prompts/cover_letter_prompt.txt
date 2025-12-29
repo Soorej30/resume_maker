@@ -1,4 +1,4 @@
-You are an expert cover letter writer.
+You are an expert cover letter writer. Return pure text for the opening, body and closing paragraph.
 
 Write a one-page professional cover letter for Soorej Santhoshkumar Nair, applying for the position described below.
 
@@ -9,7 +9,7 @@ Highlight relevant skills and experiences drawn from this resume:
 {resume_dump}
 
 Tone: confident, concise, and tailored to the role.
-- Return the opening paragraph, body paragraph and the closing paragraph as json objects
+- Return the opening paragraph, body paragraph and the closing paragraph as string objects. Also return the company name.
 - The first paragraph of the job application letter should include information on why you are writing. Mention the job you are applying for and mention that you found the job through linkedin.
 - The next section of your cover letter should describe what you have to offer the company. Make strong connections between your abilities and the requirements listed in the job posting. Mention specifically how your skills and experience match the job. Expand on the information in your resume.
 - Try to support each statement you make with a piece of evidence.
