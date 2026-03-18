@@ -1,0 +1,123 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Reduced margins on all sides
+\addtolength{\oddsidemargin}{-0.75in}
+\addtolength{\evensidemargin}{-0.75in}
+\addtolength{\textwidth}{1.5in}
+\addtolength{\topmargin}{-0.75in}
+\addtolength{\textheight}{1.5in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Reduced spacing before and after section titles
+\titleformat{\section}{
+  \vspace{-8pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-8pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\resumeItem}[1]{
+  \item\normalsize{
+    {#1 \vspace{0pt}} % Tighter item spacing
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item % Tighter item spacing
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{0pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{0pt}
+}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+% Added itemsep and parsep parameters to remove spaces between list items
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}, itemsep=0pt, parsep=0pt, topsep=0pt]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{0pt}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[itemsep=0pt, parsep=0pt, topsep=0pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{0pt}}
+
+\begin{document}
+\begin{center}
+    \textbf{\Huge \scshape Soorej Santhoshkumar Nair} \\ \vspace{2pt}
+    \small +1(303)-243-2932 $|$ 
+    \href{mailto:soorej.s.nair@gmail.com}{\underline{soorej.s.nair@gmail.com}} $|$ 
+    \href{https://linkedin.com/in/soorej-s-nair-73559470}{\underline{linkedin.com/in/soorej-s-nair-73559470}} $|$
+    \href{https://github.com/Soorej30}{\underline{github.com/Soorej30}}
+\end{center}
+
+\vspace{-19pt}
+
+\section*{EDUCATION}
+
+\newcommand{\eduentry}[4]{%
+  \noindent
+  \begin{tabularx}{\linewidth}{@{}X r@{}}
+    \textbf{#1} & #2 \\
+    #3 & #4 \\
+  \end{tabularx}
+  \vspace{-2pt}
+}
+
+\eduentry
+{University of Colorado, Boulder}
+{Aug 2025 -- May 2027}
+{Master of Science in Data Science \;|\; GPA: 4.00}
+{Boulder, CO}
+
+\eduentry
+{Birla Institute of Technology and Science, Pilani}
+{Aug 2017 -- May 2021}
+{Bachelor of Engineering in Computer Science}
+{Pilani, India}
+
+\vspace{-12pt}
+
+\section{Technical Skills}
+\begin{itemize}
+{{skills}}
+\end{itemize}
+
+\section{Experience}
+\resumeSubHeadingListStart
+{{experience}}
+
+\resumeSubHeadingListEnd
+
+\vspace{-12 pt}
+\section{Projects}
+\resumeSubHeadingListStart
+
+{{projects}}
+\resumeSubHeadingListEnd
+
+\end{document}

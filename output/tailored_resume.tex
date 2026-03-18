@@ -1,0 +1,143 @@
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[hidelinks]{hyperref}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\pagestyle{empty}
+
+\addtolength{\oddsidemargin}{-0.75in}
+\addtolength{\evensidemargin}{-0.75in}
+\addtolength{\textwidth}{1.5in}
+\addtolength{\topmargin}{-0.75in}
+\addtolength{\textheight}{1.5in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\newcommand{\resumeItem}[1]{
+  \item\normalsize{
+    {#1 \vspace{0pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{0pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{0pt}
+}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{0pt}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{0pt}}
+
+\begin{document}
+\begin{center}
+    \textbf{\Huge \scshape Soorej Santhoshkumar Nair} \\ \vspace{2pt}
+    \small +1(303)-243-2932 $|$ \href{mailto:soorej.s.nair@gmail.com}{\underline{soorej.s.nair@gmail.com}} $|$ \href{https://linkedin.com/in/soorej-s-nair-73559470}{\underline{linkedin.com/in/soorej-s-nair-73559470}} $|$ \href{https://github.com/Soorej30}{\underline{github.com/Soorej30}}
+\end{center}
+
+\vspace{-19pt}
+
+\section*{EDUCATION}
+
+\newcommand{\eduentry}[4]{%
+  \noindent
+  \begin{tabularx}{\linewidth}{@{}X r@{}}
+    \textbf{#1} & #2 \\
+    #3 & #4 \\
+  \end{tabularx}
+  \vspace{-2pt}
+}
+
+\eduentry
+{University of Colorado, Boulder}
+{Aug 2025 -- May 2027}
+{Master of Science in Data Science \;|\; GPA: 4.00}
+{Boulder, CO}
+
+\eduentry
+{Birla Institute of Technology and Science, Pilani}
+{Aug 2017 -- May 2021}
+{Bachelor of Engineering in Computer Science}
+{Pilani, India}
+
+\vspace{-12pt}
+
+\section{Technical Skills}
+\begin{itemize}
+\small{\item{
+\textbf{Skills}{: Python, Java, C++, Rust, SQL, MATLAB, PowerBI, Tableau, Numpy, Pandas, Matplotlib, TensorFlow, Keras, Hugging Face, OpenCV, Scikit-learn, Linux, Databricks MLflow, Statistics, Diffusion Models, Vision-Language Models, GANs, Autoencoders, LangChain, Agentic AI, RAGs, Image Processing, Map-reduce, Reinforcement learning, Machine Learning, Regression, Classification, AWS, GCP, Docker, Kubernetes, Git, MLflow, Airflow, Google Cloud Platform, Hadoop, Spark}
+}}
+\end{itemize}
+\vspace{-12pt}
+
+\section{Summary}
+Highly motivated and detail-oriented data scientist with a strong background in machine learning, deep learning, and natural language processing. Proficient in a range of programming languages, including Python, Java, and C++. Experienced in working with large datasets and developing predictive models to drive business growth.
+
+\vspace{-8pt}
+
+
+\section{Experience}
+\resumeSubHeadingListStart
+\resumeSubheading
+{Senior Data Scientist}{}
+{XPO Logistics}{}
+\resumeItemListStart
+\resumeItem{Developed and deployed a Random Forest churn prediction model that achieved 90\% precision in the top decile, preventing over \$240M in potential revenue loss.}
+\resumeItem{Designed and implemented an OCR-based computer vision system that processed 60K+ bills of lading daily, extracting structured data into BigQuery and SQL-based pipelines.}
+\resumeItem{Created an end-to-end LLM-based pipeline using Google Gemini, GCP, and Vertex AI, integrating CV, NLP, and OCR workflows for automated invoice extraction and classification.}
+\resumeItemListEnd
+\resumeSubheading
+{Data Scientist}{}
+{XPO Logistics}{}
+\resumeItemListStart
+\resumeItem{Partnered with McKinsey to develop an ML-based logistics simulation model that improved freight handling efficiency by 54\%.}
+\resumeItem{Developed a computer vision audit platform using GCP, Pub/Sub, SQL, and Vertex AI Pipelines, processing 80K+ documents daily and enhancing data quality metrics.}
+\resumeItem{Created CNN-based models for accessorial optimization and trailer image analysis, generating \$1.3M in incremental revenue.}
+\resumeItemListEnd
+\resumeSubheading
+{Associate Data Scientist}{}
+{XPO Logistics}{}
+\resumeItemListStart
+\resumeItem{Built decision tree models to detect fraudulent claims using Vertex AI and SQL queries, generating \$15K monthly.}
+\resumeItem{Developed ARIMA-based time series forecasting models in R, Python, and BQML to predict employee attrition, communicating insights through data visualization and storytelling.}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+\vspace{-12pt}
+
+\section{Projects}
+\resumeSubHeadingListStart
+\resumeProjectHeading
+{\textbf{Multimodal Vision-Language Model (VLM) from Scratch}}{}
+\resumeItemListStart
+\resumeItem{Implemented a custom Vision-Language Model in PyTorch, building the core Transformer architecture and integrating a SigLIP-based vision encoder with a language model via a custom MLP projector.}
+\resumeItem{Optimized training and inference by implementing causal masking and RMSNorm, improving stability and enabling efficient token generation for 7-DoF robotic action sequences.}
+\resumeItemListEnd
+\resumeProjectHeading
+{\textbf{Transformer-based Hindi Poetry Generator}}{}
+\resumeItemListStart
+\resumeItem{Built a custom decoder-only Transformer-based generative model leveraging natural language processing and statistical text analysis on data fetched from web scraping.}
+\resumeItem{Applied data wrangling and model evaluation metrics to assess creativity and linguistic coherence.}
+\resumeItemListEnd
+\resumeProjectHeading
+{\textbf{Implementation of Sparsity Invariant CNNs}}{}
+\resumeItemListStart
+\resumeItem{Implemented sparse convolutional neural networks (SCNNs) for LiDAR data, applying statistical validation and quantitative performance measurement to compare against traditional CNNs.}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\end{document}

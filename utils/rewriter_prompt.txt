@@ -1,0 +1,4 @@
+Focus on matching the target job's terminology where the source resume already supports it.
+Prefer measurable impact and action verbs.
+Trim redundancy before adding emphasis.
+Keep bullets concise and ATS-friendly.

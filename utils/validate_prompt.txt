@@ -1,0 +1,3 @@
+Be strict about hallucinations, vague phrasing, and keyword stuffing.
+Penalize resumes that feel too long, repetitive, or weakly matched to the role.
+Suggestions should be concrete and directly actionable.
